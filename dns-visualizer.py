@@ -21,6 +21,7 @@ from app import app, inject_data, login_required_route
 
 
 SUPPORTED_TYPES = ["A", "AAAA", "MX", "NS", "CNAME", "TXT", "SOA", "PTR", "SRV", "CAA"]
+
 TYPE_COLORS = {
     "A": "lightgreen",
     "AAAA": "lightblue",
