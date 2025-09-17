@@ -1,0 +1,10 @@
+name = dns_visualizer
+title = DNS Visualizer
+description = Check and visualize DNS for a domain.
+link = /advanced/dns-visualizer
+version = 1.0.0
+author = Stefan Pejcic
+category = advanced
+icon = bi bi-bolt
+show_in_search = 1
+help_link = https://github.com/stefanpejcic/dns-visualizer/
