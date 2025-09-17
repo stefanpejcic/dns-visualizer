@@ -219,7 +219,7 @@ def format_results_as_text(results):
 
 
  
-@app.route('/advanced/dns-visualizer', methods=['GET', 'POST'])
+@app.route('/domains/dns-visualizer', methods=['GET', 'POST'])
 @login_required_route
 def dns_visualizer():
 
@@ -232,7 +232,7 @@ def dns_visualizer():
     )
 
 
-@app.route('/advanced/dns-visualizer/raw', methods=['GET'])
+@app.route('/domains/dns-visualizer/raw', methods=['GET'])
 @login_required_route
 def dns_visualizer_raw():
     domain = request.args.get('domain', '')
