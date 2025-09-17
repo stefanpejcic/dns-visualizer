@@ -223,7 +223,7 @@ def format_results_as_text(results):
 @login_required_route
 def dns_visualizer():
 
-    template_path = os.path.join(os.path.dirname(__file__), 'dns_visualizer.html')
+    template_path = os.path.join(os.path.dirname(__file__), 'dns-visualizer.html')
     with open(template_path) as f:
         template = f.read()
 
