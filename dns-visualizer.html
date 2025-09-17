@@ -12,12 +12,12 @@
         <form id="dnsForm" method="get" action="/domains/dns-visualizer/raw" target="result_frame" class="space-y-4 flex gap-4 items-center">
           <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
           <div>
-            <label class="block font-semibold">Domain:</label>
+            <label class="block text-sm text-gray-500 dark:text-gray-500">Domain:</label>
             <input class="border rounded px-2 py-1 w-full" type="text" name="domain" value="{{ domain | default('') }}" required>
           </div>
           
           <div>
-            <label class="block font-semibold">Record Type (optional):</label>
+            <label class="block text-sm text-gray-500 dark:text-gray-500">Record Type (optional):</label>
             <select class="border rounded px-2 py-1 w-full" name="type">
               <option value="" {% if not record_type %}selected{% endif %}>ALL</option>
               {% for t in supported_types %}
@@ -27,12 +27,12 @@
           </div>
         
           <div class="hidden">
-            <label class="block font-semibold">Depth:</label>
+            <label class="block text-sm text-gray-500 dark:text-gray-500">Depth:</label>
             <input class="border rounded px-2 py-1 w-full" type="number" name="depth" value="{{ depth | default(1) }}" min="1">
           </div>
         
           <div>
-            <label class="block font-semibold">Output:</label>
+            <label class="block text-sm text-gray-500 dark:text-gray-500">Output:</label>
             <select class="border rounded px-2 py-1 w-full" name="output">
               <option value="html" {% if output=='html' %}selected{% endif %}>Interactive HTML</option>
               <option value="json" {% if output=='json' %}selected{% endif %}>JSON</option>
