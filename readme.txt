@@ -1,4 +1,4 @@
-name = dns_visualizer
+name = dns-visualizer
 title = DNS Visualizer
 description = Check and visualize DNS for a domain.
 link = /domains/dns-visualizer
