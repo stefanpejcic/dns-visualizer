@@ -1,4 +1,4 @@
-# dns_visualizer.py
+# dns-visualizer.py
 from flask import Flask, jsonify, Response, request, render_template, abort, request
 import dns.resolver
 import concurrent.futures
