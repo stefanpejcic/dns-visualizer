@@ -11,6 +11,8 @@ docker exec openpanel bash -c "pip install dnspython pyvis" && \
   docker restart openpanel
 ```
 
+add in `/root/openpanel_run_on_startup` to run 'pip install dnspython pyvis' on startup.
+
 Update:
 ```bash
 rm -rf /etc/openpanel/modules/dns-visualizer && \
