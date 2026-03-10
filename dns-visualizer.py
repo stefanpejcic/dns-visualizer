@@ -231,7 +231,7 @@ def dns_visualizer():
         template = f.read()
 
     return render_template_string(
-        template, title=_('DNS Visualizer', supported_types=SUPPORTED_TYPES, domain='', record_type='', depth=1, output='html')
+        template, title='DNS Visualizer', supported_types=SUPPORTED_TYPES, domain='', record_type='', depth=1, output='html'
     )
 
 
