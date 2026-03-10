@@ -13,12 +13,12 @@
           <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
           <div>
             <label class="block text-sm text-gray-500 dark:text-gray-500">Domain:</label>
-            <input class="border rounded px-2 py-1 w-full" type="text" name="domain" value="{{ domain | default('') }}" required>
+            <input class="rounded border border-gray-300 dark:border-gray-800 px-2 py-1 w-full" type="text" name="domain" value="{{ domain | default('') }}" required>
           </div>
           
           <div>
             <label class="block text-sm text-gray-500 dark:text-gray-500">Record Type (optional):</label>
-            <select class="border rounded px-2 py-1 w-full" name="type">
+            <select class="rounded border border-gray-300 dark:border-gray-800 px-2 py-1 w-full" name="type">
               <option value="" {% if not record_type %}selected{% endif %}>ALL</option>
               {% for t in supported_types %}
               <option value="{{ t }}" {% if record_type==t %}selected{% endif %}>{{ t }}</option>
@@ -28,12 +28,12 @@
         
           <div class="hidden">
             <label class="block text-sm text-gray-500 dark:text-gray-500">Depth:</label>
-            <input class="border rounded px-2 py-1 w-full" type="number" name="depth" value="{{ depth | default(1) }}" min="1">
+            <input class="rounded border border-gray-300 dark:border-gray-800 px-2 py-1 w-full" type="number" name="depth" value="{{ depth | default(1) }}" min="1">
           </div>
         
           <div>
             <label class="block text-sm text-gray-500 dark:text-gray-500">Output:</label>
-            <select class="border rounded px-2 py-1 w-full" name="output">
+            <select class="rounded border border-gray-300 dark:border-gray-800 px-2 py-1 w-full" name="output">
               <option value="html" {% if output=='html' %}selected{% endif %}>Interactive HTML</option>
               <option value="json" {% if output=='json' %}selected{% endif %}>JSON</option>
               <option value="text" {% if output=='text' %}selected{% endif %}>Text</option>
